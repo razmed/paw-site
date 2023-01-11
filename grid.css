@@ -1,0 +1,46 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr  ;
+    grid-template-rows: 1fr 2.7fr 1fr 1fr 2.5fr 1fr;
+    grid-template-areas: 
+    "nav nav "
+    "sidebar main"
+    "sidebar content1"
+    "sidebar content2"
+    "sidebar content3"
+    "sidebar footer ";
+    grid-gap: .2rem;
+}
+.vidgif{
+    height: 400px;
+    width: 700px;
+    margin: 0 auto;
+}
+nav{
+    grid-area:nav;
+}
+main{
+
+    grid-area:main;
+}
+#sidebar{
+ 
+    grid-area:sidebar;
+}
+#content1{
+
+    grid-area:content1;
+}
+#content2{
+
+    grid-area:content2;
+}
+#content3{
+
+    grid-area:content3;
+}
+footer{
+
+    grid-area:footer;
+}
